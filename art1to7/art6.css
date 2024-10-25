@@ -1,0 +1,93 @@
+/* General Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: white;
+    line-height: 1.6;
+    background-color: black;
+}
+/* Body and HTML Height for Full Layout */
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Header Section */
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 80px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #00E676;
+    text-decoration: none;
+}
+/* Product Section */
+.art-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+.art-preview {
+    flex-basis: 40%;
+}
+.art-preview img {
+    max-width: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.art-details {
+    flex-basis: 50%;
+}
+.art-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.artist-description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+.description {
+    margin-bottom: 20px;
+}
+.shipping-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+.purchase-options {
+    margin-top: 30px;
+}
+.add-to-cart, .make-offer {
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    color:#00E676;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+/* Footer Section */
+footer {
+    background-color: black;;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

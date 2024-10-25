@@ -1,0 +1,217 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: auto;
+  width: 80px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #00E676;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero {
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4d3131;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: #00e676;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.cta-button {
+  display: inline-block;
+  color: #00E676;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00e676;
+  color: #121212;
+}
+
+.main-footer {
+  background-color: black;
+  padding: 40px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.footer-column h3 {
+  font-size: 1.2em;
+  color: #00e676;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #00e676;
+}
+.bottom-footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body.light-theme {
+  background-color: white;
+}
+
+body.light-theme .bottom-footer {
+  color: black;
+}
+
+body.light-theme .header,
+body.light-theme .main-footer,
+body.light-theme .bottom-footer,
+body.light-theme .hero {
+  background-color: white;
+}
+
+body.light-theme .hero h1,
+body.light-theme .hero p,
+body.light-theme .footer-column ul li a {
+  color: black;
+}
+
+/* Theme Switcher Styling in Footer */
+.theme-switcher-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.theme-switcher-container select {
+  background-color: black;
+  color: #00e676;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+body.light-theme .theme-switcher-container select {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
